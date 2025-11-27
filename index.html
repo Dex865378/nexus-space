@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora el futuro del transporte espacial con nuestras naves, motos y estructuras futuristas de última generación.">
+    <meta name="keywords" content="naves espaciales, motos futuristas, estructuras espaciales, tecnología futurista">
+    <meta name="author" content="NEXUS SPACE">
+    <title>NEXUS SPACE | Naves Futuristas - El Futuro del Transporte Espacial</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <div class="splash-content">
+            <h1 class="splash-title">NEXUS SPACE</h1>
+            <p class="splash-subtitle">Explora el universo desconocido</p>
+            <button class="splash-btn" id="start-adventure-btn">¿Listo para comenzar la aventura?</button>
+        </div>
+    </div>
+
+    <div class="background-animation"></div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">⭐ NEXUS SPACE</div>
+            <nav>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <button class="dropbtn">Catálogo ▾</button>
+                        <div class="dropdown-content">
+                            <a href="#" data-section="naves">Naves</a>
+                            <a href="#" data-section="motos">Motos Espaciales</a>
+                            <a href="#" data-section="estructuras">Estructuras</a>
+                            <a href="#" data-section="edificios">Edificios</a>
+                            <a href="#" data-section="especies">Especies</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Colores ▾</button>
+                        <div class="dropdown-content palette-selector">
+                            <a href="#" data-theme="default" class="theme-option"><span class="color-dot"
+                                    style="background: #b624ff;"></span> Neon Purple</a>
+                            <a href="#" data-theme="blue" class="theme-option"><span class="color-dot"
+                                    style="background: #00f3ff;"></span> Cyber Blue</a>
+                            <a href="#" data-theme="red" class="theme-option"><span class="color-dot"
+                                    style="background: #ff2a2a;"></span> Plasma Red</a>
+                            <a href="#" data-theme="green" class="theme-option"><span class="color-dot"
+                                    style="background: #39ff14;"></span> Toxic Green</a>
+                            <a href="#" data-theme="gold" class="theme-option"><span class="color-dot"
+                                    style="background: #ffd700;"></span> Golden Age</a>
+                            <a href="#" data-theme="pink" class="theme-option"><span class="color-dot"
+                                    style="background: #ff00ff;"></span> Neon Pink</a>
+                            <a href="#" data-theme="yellow" class="theme-option"><span class="color-dot"
+                                    style="background: #ffff00;"></span> Cyber Yellow</a>
+                            <a href="#" data-theme="cyan" class="theme-option"><span class="color-dot"
+                                    style="background: #00ffff;"></span> Electric Cyan</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Fondos ▾</button>
+                        <div class="dropdown-content background-selector">
+                            <a href="#" data-bg="default">Espacio Profundo</a>
+                            <a href="#" data-bg="nebula">Nebula</a>
+                            <a href="#" data-bg="warp">Velocidad Warp</a>
+                            <a href="#" data-bg="matrix">Matrix Digital</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <button class="dark-mode-toggle" id="dark-mode-toggle" title="Cambiar modo día/noche">☀️</button>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <h1 class="hero-title">BIENVENIDO AL FUTURO</h1>
+        <p class="hero-subtitle">
+            Descubre la próxima generación de vehículos espaciales y megaestructuras que llevarán a la humanidad más
+            allá de las estrellas
+        </p>
+    </section>
+
+    <div class="container">
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number" id="total-vehicles">0</div>
+                <div class="stat-label">Vehículos Totales</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="total-ships">0</div>
+                <div class="stat-label">Naves Espaciales</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="total-bikes">0</div>
+                <div class="stat-label">Motos Espaciales</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="total-structures">0</div>
+                <div class="stat-label">Megaestructuras</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="total-buildings">0</div>
+                <div class="stat-label">Edificios</div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="search-controls">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="🔍 Buscar vehículos por nombre..." />
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">✨ Todos</button>
+                <button class="filter-btn" data-filter="rapido">⚡ Velocidad</button>
+                <button class="filter-btn" data-filter="pesado">🛡️ Pesados</button>
+                <button class="filter-btn" data-filter="ligero">🏃 Ligeros</button>
+            </div>
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="grid" title="Vista de cuadrícula">⊞</button>
+                <button class="view-btn" data-view="list" title="Vista de lista">☰</button>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2 class="section-title">NAVES ESPACIALES</h2>
+            <p class="section-description">
+                Explora nuestra flota de naves interestelares de última generación equipadas con tecnología de
+                vanguardia
+            </p>
+        </div>
+
+        <div class="vehicles-grid" id="vehicles-container">
+            <!-- Las tarjetas se generarán dinámicamente con JavaScript -->
+        </div>
+    </main>
+
+    <div class="modal" id="vehicle-modal">
+        <div class="modal-content">
+            <!-- El contenido se genera dinámicamente -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                <strong
+                    style="color: #b624ff; font-family: 'Orbitron', sans-serif; font-size: 1.5rem; letter-spacing: 2px;">
+                    ⭐ NEXUS SPACE
+                </strong>
+            </p>
+            <p style="margin-top: 1.5rem; font-size: 1.2rem;">
+                El futuro del transporte espacial está aquí
+            </p>
+            <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.8;">
+                Innovación | Tecnología | Exploración
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                © 2024 NEXUS SPACE. Tecnología de vanguardia para la exploración intergaláctica.
+            </p>
+            <p style="margin-top: 0.5rem;">
+                <a href="#" class="footer-link">Contacto</a> |
+                <a href="#" class="footer-link">Sobre Nosotros</a> |
+                <a href="#" class="footer-link">Catálogo Completo</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
