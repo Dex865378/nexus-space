@@ -41,24 +41,51 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <button class="dropbtn">Colores ▾</button>
+                        <button class="dropbtn">Personalizar ▾</button>
                         <div class="dropdown-content palette-selector">
-                            <a href="#" data-theme="default" class="theme-option"><span class="color-dot"
-                                    style="background: #b624ff;"></span> Neon Purple</a>
-                            <a href="#" data-theme="blue" class="theme-option"><span class="color-dot"
-                                    style="background: #00f3ff;"></span> Cyber Blue</a>
-                            <a href="#" data-theme="red" class="theme-option"><span class="color-dot"
-                                    style="background: #ff2a2a;"></span> Plasma Red</a>
-                            <a href="#" data-theme="green" class="theme-option"><span class="color-dot"
-                                    style="background: #39ff14;"></span> Toxic Green</a>
-                            <a href="#" data-theme="gold" class="theme-option"><span class="color-dot"
-                                    style="background: #ffd700;"></span> Golden Age</a>
-                            <a href="#" data-theme="pink" class="theme-option"><span class="color-dot"
-                                    style="background: #ff00ff;"></span> Neon Pink</a>
-                            <a href="#" data-theme="yellow" class="theme-option"><span class="color-dot"
-                                    style="background: #ffff00;"></span> Cyber Yellow</a>
-                            <a href="#" data-theme="cyan" class="theme-option"><span class="color-dot"
-                                    style="background: #00ffff;"></span> Electric Cyan</a>
+                            <div class="custom-section">
+                                <span class="section-label">🎨 Color de Texto</span>
+                                <div class="color-grid">
+                                    <button class="color-btn" data-type="text" data-color="#1a1a2e"
+                                        style="background: #1a1a2e;" title="Oscuro"></button>
+                                    <button class="color-btn" data-type="text" data-color="#b624ff"
+                                        style="background: #b624ff;" title="Neon Purple"></button>
+                                    <button class="color-btn" data-type="text" data-color="#00f3ff"
+                                        style="background: #00f3ff;" title="Cyber Blue"></button>
+                                    <button class="color-btn" data-type="text" data-color="#ff2a2a"
+                                        style="background: #ff2a2a;" title="Plasma Red"></button>
+                                    <button class="color-btn" data-type="text" data-color="#39ff14"
+                                        style="background: #39ff14;" title="Toxic Green"></button>
+                                </div>
+                            </div>
+                            <div class="custom-section">
+                                <span class="section-label">🖼️ Color de Bordes</span>
+                                <div class="color-grid">
+                                    <button class="color-btn" data-type="border" data-color="#b624ff"
+                                        style="background: #b624ff;" title="Neon Purple"></button>
+                                    <button class="color-btn" data-type="border" data-color="#00f3ff"
+                                        style="background: #00f3ff;" title="Cyber Blue"></button>
+                                    <button class="color-btn" data-type="border" data-color="#ff2a2a"
+                                        style="background: #ff2a2a;" title="Plasma Red"></button>
+                                    <button class="color-btn" data-type="border" data-color="#39ff14"
+                                        style="background: #39ff14;" title="Toxic Green"></button>
+                                    <button class="color-btn" data-type="border" data-color="#ffd700"
+                                        style="background: #ffd700;" title="Golden Age"></button>
+                                </div>
+                            </div>
+                            <div class="custom-section">
+                                <span class="section-label">⬜ Fondo de Tarjetas</span>
+                                <div class="color-grid">
+                                    <button class="color-btn" data-type="card" data-color="#ffffff"
+                                        style="background: #ffffff; border: 2px solid #ccc;" title="Blanco"></button>
+                                    <button class="color-btn" data-type="card" data-color="#f0f0f0"
+                                        style="background: #f0f0f0;" title="Gris Claro"></button>
+                                    <button class="color-btn" data-type="card" data-color="#1a1a2e"
+                                        style="background: #1a1a2e;" title="Oscuro"></button>
+                                    <button class="color-btn" data-type="card" data-color="#000000"
+                                        style="background: #000000;" title="Negro"></button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -72,7 +99,6 @@
                     </li>
                 </ul>
             </nav>
-            <button class="dark-mode-toggle" id="dark-mode-toggle" title="Cambiar modo día/noche">☀️</button>
         </div>
     </header>
 
